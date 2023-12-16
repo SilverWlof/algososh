@@ -1,0 +1,47 @@
+.inputRow {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+}
+
+.circlesGrid {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 16px;
+    grid-row-gap: 60px;
+    list-style-type: none;
+}
+.inputControl{
+    width:204px;
+}
+.Button {
+    width: 175px;
+}
+.wideButton {
+    width: 362px;
+}
+.pageContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contentColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.listNode {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+.arrowBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
