@@ -312,7 +312,7 @@ export const ListPage: React.FC = () => {
                               disabled={isProcessing || (nodeStr.length === 0) || (indStr.length === 0) || (linkedNodeList.getSize() < Number(indStr))}></Button>
                           <Button extraClass={`${styles.wideButton}`} text="Удалить по индексу" onClick={handleRemoveAtClick}
                               isLoader={(processingMode === REMOVE_INDEX) && isProcessing}
-                              disabled={isProcessing || (indStr.length === 0) || (linkedNodeList.getSize() < Number(indStr))} ></Button>
+                              disabled={isProcessing || (indStr.length === 0)|| (linkedNodeList.getSize() <= Number(indStr))} ></Button>
                       </div>
                   </div>
                   <ul className={`${styles.circlesGrid}`}>

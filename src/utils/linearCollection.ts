@@ -123,27 +123,6 @@ export class LinkedList<T> {
                 this.head = newNode;
                 this.size++;
             } else {
-                //let curr = this.head;
-                //let currIndex = 0;
-
-                //for (currIndex; currIndex < index - 1; currIndex++) {
-                //    if (curr === null) {
-                //        console.log('Enter a valid index');
-                //        return;
-                //    }
-                //    curr = curr.next;
-                //}
-                //// перебрать элементы в списке до нужной позиции
-                //// ваш код ...
-
-                //if (curr === null) {
-                //    console.log('Enter a valid index');
-                //    return;
-                //}
-                //node.next = curr.next;
-                //curr.next = node;
-                //// добавить элемент
-                //// ваш код ...
                 const prev = this.getAt(index - 1);
                 if (prev) {
                     const temp = prev.next;
@@ -163,7 +142,7 @@ export class LinkedList<T> {
             }
             else {
                 const prev = this.getAt(index - 1);
-                if (prev) {//вообще 100% не может быть нулл, если нигде не проглядел.
+                if (prev) {
                     const next = prev.next !== null ? prev.next.next:null;
                     prev.next = next;
                     this.size--;
@@ -187,14 +166,4 @@ export class LinkedList<T> {
     getSize() {
         return this.size;
     }
-
-    //print() {
-    //    let curr = this.head;
-    //    let res = '';
-    //    while (curr) {
-    //        res += `${curr.value} `;
-    //        curr = curr.next;
-    //    }
-    //    console.log(res);
-    //}
 }
