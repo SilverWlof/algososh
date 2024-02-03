@@ -1,0 +1,32 @@
+
+.circlesGrid {
+    display: flex;
+    flex-direction: row;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(10, 1fr);*/
+    /*grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);*/
+    grid-column-gap: 16px;
+    grid-row-gap: 60px;
+    max-width: 944px;
+    flex-wrap: wrap;
+}
+.pageContent {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contentColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.inputRow {
+    min-width:567px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
