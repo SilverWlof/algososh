@@ -88,7 +88,7 @@ export const QueuePage: React.FC = () => {
             result[headIndex].head = "head";
         }
         const tailIndex = stringQueue.getTail();
-        if (tailIndex) {
+        if (tailIndex !== null) {
             result[tailIndex].tail = "tail";
         }
 
@@ -99,25 +99,25 @@ export const QueuePage: React.FC = () => {
 
   return (
       <SolutionLayout title="Очередь">
-          <div className={`${styles.pageContent}`}>
+          <div className={`${styles.pageContent}`} data-cy="queue-page">
               <div className={`${styles.contentColumn}`}>
                   <div className={`${styles.inputRow}`}>
                       <div className={`${styles.controlsGroup}`}>
-                          <Input maxLength={4} isLimitText={true} value={inputStr} onChange={onValueChange}></Input>
-                          <Button text="Добавить"
+                          <Input maxLength={4} isLimitText={true} value={inputStr} onChange={onValueChange} data-cy="main-input"></Input>
+                          <Button text="Добавить" data-cy="add-button"
                               onClick={handleEnqueueClick}
                               disabled={isProcessing || (inputStr.length === 0) || (stringQueue.getTail() === queueMaxLength - 1)}
                               isLoader={(processingMode === ADD_BUTTON) && isProcessing}></Button>
-                          <Button text="Удалить"
+                          <Button text="Удалить" data-cy="remove-button"
                               onClick={handleDequeueClick}
                               disabled={isProcessing || stringQueue.getHead() === null}
                               isLoader={(processingMode === REMOVE_BUTTON) && isProcessing}></Button>
                       </div>
-                      <Button text="Очистить" onClick={handleClearClick} disabled={isProcessing || (stringQueue.getHead() === null)}></Button>
+                      <Button text="Очистить" onClick={handleClearClick} disabled={isProcessing || (stringQueue.getHead() === null)} data-cy="clear-button"></Button>
                   </div>
-                  <ul className={`${styles.circlesGrid}`}>
+                  <ul className={`${styles.circlesGrid}`} data-cy="visualization-grid">
                       {stringCirclesPropsList.map((circlesProps,ind) => (
-                          <li key={ind}>
+                          <li key={ind} data-cy="visualization-element" >
                               <Circle {...circlesProps} />
                           </li>
                       ))}

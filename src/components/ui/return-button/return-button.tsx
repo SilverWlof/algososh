@@ -15,7 +15,8 @@ export const ReturnButton: React.FC<ButtonProps> = ({
     <button
       className={`${styles.button} ${extraClass}`}
       type="button"
-      {...rest}
+          {...rest}
+          data-cy="return-button"
     >
       <ReturnIcon />
       <p className="text text_type_button text_color_link ml-4">К оглавлению</p>
