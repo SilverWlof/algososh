@@ -3,15 +3,19 @@
 exports[`button with letters 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     >
       test letters
     </p>
@@ -21,6 +25,7 @@ exports[`button with letters 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -28,15 +33,19 @@ exports[`button with letters 1`] = `
 exports[`circle in state equal :changing 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   changing"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -44,6 +53,7 @@ exports[`circle in state equal :changing 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -51,15 +61,19 @@ exports[`circle in state equal :changing 1`] = `
 exports[`circle in state equal :default 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -67,6 +81,7 @@ exports[`circle in state equal :default 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -74,15 +89,19 @@ exports[`circle in state equal :default 1`] = `
 exports[`circle in state equal :modified 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   modified"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -90,6 +109,7 @@ exports[`circle in state equal :modified 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -97,17 +117,21 @@ exports[`circle in state equal :modified 1`] = `
 exports[`circle with head 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head string"
+    data-cy="circle-head"
   >
     test text
   </div>
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -115,6 +139,7 @@ exports[`circle with head 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -122,15 +147,19 @@ exports[`circle with head 1`] = `
 exports[`circle with index 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -140,6 +169,7 @@ exports[`circle with index 1`] = `
   </p>
   <div
     className="text text_type_input text_color_input mt-4 absolute tail60 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -147,15 +177,19 @@ exports[`circle with index 1`] = `
 exports[`circle with isSmall ===  true 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle  small default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -163,6 +197,7 @@ exports[`circle with isSmall ===  true 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -170,21 +205,27 @@ exports[`circle with isSmall ===  true 1`] = `
 exports[`circle with react in head 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   >
     <div
       className="content "
+      data-cy="circle"
     >
       <div
         className="text text_type_input text_color_input mb-4 absolute head element"
+        data-cy="circle-head"
       />
       <div
         className="circle   default"
+        data-cy="circle-border"
       >
         <p
           className="text text_type_circle text_color_input letter"
+          data-cy="circle-text"
         />
       </div>
       <p
@@ -192,14 +233,17 @@ exports[`circle with react in head 1`] = `
       />
       <div
         className="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-cy="circle-tail"
       />
     </div>
   </div>
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -207,6 +251,7 @@ exports[`circle with react in head 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
@@ -214,15 +259,19 @@ exports[`circle with react in head 1`] = `
 exports[`circle with react in tail 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -230,18 +279,23 @@ exports[`circle with react in tail 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   >
     <div
       className="content "
+      data-cy="circle"
     >
       <div
         className="text text_type_input text_color_input mb-4 absolute head element"
+        data-cy="circle-head"
       />
       <div
         className="circle   default"
+        data-cy="circle-border"
       >
         <p
           className="text text_type_circle text_color_input letter"
+          data-cy="circle-text"
         />
       </div>
       <p
@@ -249,6 +303,7 @@ exports[`circle with react in tail 1`] = `
       />
       <div
         className="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-cy="circle-tail"
       />
     </div>
   </div>
@@ -258,15 +313,19 @@ exports[`circle with react in tail 1`] = `
 exports[`circle with tail 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -274,6 +333,7 @@ exports[`circle with tail 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 string"
+    data-cy="circle-tail"
   >
     test text
   </div>
@@ -283,15 +343,19 @@ exports[`circle with tail 1`] = `
 exports[`circle without letter 1`] = `
 <div
   className="content "
+  data-cy="circle"
 >
   <div
     className="text text_type_input text_color_input mb-4 absolute head element"
+    data-cy="circle-head"
   />
   <div
     className="circle   default"
+    data-cy="circle-border"
   >
     <p
       className="text text_type_circle text_color_input letter"
+      data-cy="circle-text"
     />
   </div>
   <p
@@ -299,6 +363,7 @@ exports[`circle without letter 1`] = `
   />
   <div
     className="text text_type_input text_color_input mt-4 absolute tail30 element"
+    data-cy="circle-tail"
   />
 </div>
 `;
