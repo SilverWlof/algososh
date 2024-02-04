@@ -6,7 +6,7 @@ const indexInputText = 'ind';
 const index = 3;
 describe('service is available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
         cy.get(listLink).click();
     });
     //1

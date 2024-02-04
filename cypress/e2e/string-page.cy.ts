@@ -5,7 +5,7 @@ const reverseString = '1234567'// <----
 
 describe('service is available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
         cy.get(recursionLink).click();
     });
 

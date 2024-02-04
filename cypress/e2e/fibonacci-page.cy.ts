@@ -6,7 +6,7 @@ const fibonacciList = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610,
 
 describe('service is available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
         cy.get(fibonacciLink).click();
     });
 

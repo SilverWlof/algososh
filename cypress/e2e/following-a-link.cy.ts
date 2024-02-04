@@ -2,7 +2,7 @@ import { fibonacciLink, fibonacciPage, listLink, listPage, mainPage, queueLink, 
 
 describe('all pages are available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
     });
     //
     it('should open string page and return', function () {

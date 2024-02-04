@@ -3,7 +3,7 @@ import { NORMAL_DELAY, addButton, changingStyle, circle, circleHead, circleTail,
 const inputAmount = Math.floor(Math.random() * 5) + 2;
 describe('service is available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
         cy.get(queueLink).click();
     });
     //1

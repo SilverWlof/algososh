@@ -3,7 +3,7 @@ import { NORMAL_DELAY, addButton, changingStyle, circle, clearButton, defaultSty
 const inputAmount = Math.floor(Math.random() * 4) + 2;
 describe('service is available', function () {
     beforeEach(function () {
-        cy.visit('http://localhost:3000');
+        cy.visit();
         cy.get(stackLink).click();
     });
     //1
