@@ -72,27 +72,27 @@ export const StackPage: React.FC = () => {
 
   return (
       <SolutionLayout title="Стек">
-          <div className={`${styles.pageContent}`}>
+          <div className={`${styles.pageContent}`} data-cy="stack-page">
               <div className={`${styles.contentColumn}`}>
                   <div className={`${styles.inputRow}`}>
                       <div className={`${styles.controlsGroup}`}>
-                          <Input maxLength={4} isLimitText={true} value={inputStr} onChange={onValueChange}></Input>
-                          <Button text="Добавить"
+                          <Input maxLength={4} isLimitText={true} value={inputStr} onChange={onValueChange} data-cy="main-input"></Input>
+                          <Button text="Добавить" data-cy="add-button"
                               onClick={handlePushClick}
                               disabled={isProcessing || inputStr.length === 0}
                               isLoader={(processingMode === ADD_BUTTON) && isProcessing}></Button>
-                          <Button text="Удалить"
+                          <Button text="Удалить" data-cy="remove-button"
                               onClick={handlePopClick}
                               disabled={isProcessing || stringStack.getSize() === 0}
                               isLoader={(processingMode === REMOVE_BUTTON) && isProcessing}></Button>
                       </div>
-                      <Button text="Очистить"
+                      <Button text="Очистить" data-cy="clear-button"
                           onClick={handleClearClick}
                           disabled={isProcessing || stringStack.getSize() === 0}></Button>
                   </div>
-                  <ul className={`${styles.circlesGrid}`}>
+                  <ul className={`${styles.circlesGrid}`} data-cy="visualization-grid">
                       {stringCirclesPropsList.map((circlesProps, ind) => (
-                          <li key={ind}>
+                          <li key={ind} data-cy="visualization-element" >
                               <Circle {...circlesProps} />
                           </li>
                       ))}

@@ -2,6 +2,7 @@
 .circlesGrid {
     display: flex;
     flex-direction: row;
+    list-style-type: none;
     /*display: grid;*/
     /*grid-template-columns: repeat(10, 1fr);*/
     /*grid-template-columns: repeat(10, 1fr);

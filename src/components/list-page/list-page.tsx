@@ -287,37 +287,37 @@ export const ListPage: React.FC = () => {
     };
   return (
       <SolutionLayout title="Связный список">
-          <div className={`${styles.pageContent}`}>
+          <div className={`${styles.pageContent}`} data-cy="list-page">
               <div className={`${styles.contentColumn}`}>
                   <div>
                       <div className={`${styles.inputRow}`}>
-                          <Input extraClass={`${styles.inputControl}`} maxLength={4} isLimitText={true} value={nodeStr} onChange={onNodeStrValueChange}></Input>
+                          <Input extraClass={`${styles.inputControl}`} maxLength={4} isLimitText={true} value={nodeStr} onChange={onNodeStrValueChange} data-cy="main-input"></Input>
                           <Button extraClass={`${styles.Button}`} text="Добавить в head" onClick={handleAddHeadClick}
-                              isLoader={(processingMode === ADD_HEAD) && isProcessing}
+                              isLoader={(processingMode === ADD_HEAD) && isProcessing} data-cy="add-head-button"
                               disabled={isProcessing || (nodeStr.length === 0)}></Button>
                           <Button extraClass={`${styles.Button}`} text="Добавить в tail" onClick={handleAddTailClick}
-                              isLoader={(processingMode === ADD_TAIL) && isProcessing}
+                              isLoader={(processingMode === ADD_TAIL) && isProcessing} data-cy="add-tail-button"
                               disabled={isProcessing || (nodeStr.length === 0)}></Button>
                           <Button extraClass={`${styles.Button}`} text="Удалить из head" onClick={handleRemoveHeadClick}
-                              isLoader={(processingMode === REMOVE_HEAD) && isProcessing}
+                              isLoader={(processingMode === REMOVE_HEAD) && isProcessing} data-cy="remove-head-button"
                               disabled={isProcessing || (linkedNodeList.getSize() === 0)}></Button>
                           <Button extraClass={`${styles.Button}`} text="Удалить из tail" onClick={handleRemoveTailClick}
-                              isLoader={(processingMode === REMOVE_TAIL) && isProcessing}
+                              isLoader={(processingMode === REMOVE_TAIL) && isProcessing} data-cy="remove-tail-button"
                               disabled={isProcessing || (linkedNodeList.getSize() === 0)}></Button>
                       </div>
                       <div className={`${styles.inputRow}`}>
-                          <Input type="number" extraClass={`${styles.inputControl}`} value={indStr} onChange={onIndValueChange}></Input>
+                          <Input type="number" extraClass={`${styles.inputControl}`} value={indStr} onChange={onIndValueChange} data-cy="index-input"></Input>
                           <Button extraClass={`${styles.wideButton}`} text="Добавить по индексу" onClick={handleInsertAtClick}
-                              isLoader={(processingMode === ADD_INDEX) && isProcessing}
+                              isLoader={(processingMode === ADD_INDEX) && isProcessing} data-cy="add-index-button"
                               disabled={isProcessing || (nodeStr.length === 0) || (indStr.length === 0) || (linkedNodeList.getSize() < Number(indStr))}></Button>
                           <Button extraClass={`${styles.wideButton}`} text="Удалить по индексу" onClick={handleRemoveAtClick}
-                              isLoader={(processingMode === REMOVE_INDEX) && isProcessing}
-                              disabled={isProcessing || (indStr.length === 0)|| (linkedNodeList.getSize() <= Number(indStr))} ></Button>
+                              isLoader={(processingMode === REMOVE_INDEX) && isProcessing} data-cy="remove-index-button"
+                              disabled={isProcessing || (indStr.length === 0) || (linkedNodeList.getSize() < Number(indStr))} ></Button>
                       </div>
                   </div>
-                  <ul className={`${styles.circlesGrid}`}>
+                  <ul className={`${styles.circlesGrid}`} data-cy="visualization-grid">
                       {circlesPropsList.map((circlesProps,ind) => (
-                          <li key={ind} className={`${styles.listNode}`}>
+                          <li key={ind} className={`${styles.listNode}`} data-cy="visualization-element">
                               <Circle {...circlesProps} />
                               {circlesPropsList.length - 1 !== ind &&
                                   <div className={`${styles.arrowBlock}`}>
